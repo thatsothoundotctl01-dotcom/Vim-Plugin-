@@ -1,4 +1,4 @@
-# Project-
+# Vim Plugin -
 
 A lightweight Vim plugin to improve your editing workflow.
 
