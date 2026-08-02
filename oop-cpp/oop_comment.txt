@@ -1,0 +1,120 @@
+Object Oriented Programming  
+
+
+-class A Blueprint or template for creating objects 
+-object An instance of a Class 
+-Encapsulation Protect dtaa from direct access 
+-Abstraction  Hides unnecessary details 
+-Polymorphism Allows the same method to behave differently 
+-Inheritence Reuses code from existing classes 
+ 
++ Class  
+
+=>Example  
+  -Class : Car 
+  #Object : 
+    -BMW 
+    -Lambo
+    -Gtr 
+    -etc 
+
+#Constructure  : 
+is a special member function of a class that is automatically called when an object is created. It is mainly used to initialize the object's data members and establish its initial state.
+
+=>Constructure in C++ 
+
+   -Default Constructure 
+   -Parameter Constructure 
+   -Move Constructure 
+   -Copy Constructure 
+
+
+
+
++Destructure (~) :  
+
+is a special member function that is automatically invoked when an object is destroyed. It is primarily used to release resources such as dynamically allocated memory, open files, or network connections. 
+
+    => example :  
+    class Test {
+        public : 
+        Test() { 
+            cout << "Constructure"<<endl ;
+         }
+         ~Test() { 
+             cout << "Destructure"<<endl ; 
+         }
+    } ; 
+
+
++Access Specifiers 
+
+# Public : Members can be accessed from anywhere in the program
+# Private  : Members can only be accessed within the same class. 
+# Protected :  Members can be accessed within the class and its derived classes.
+    
+    => example 
+    class Solution { 
+        public : can call anywhere   
+        private : hide process
+        protected : 
+    } 
+
+
++Abstraction : 
+
+is the process of hiding implementation details and exposing only the essential features of an object. It allows users to interact with an object without knowing how its functionality is implemented internally.
+
+-Hides Impementation details 
+-Improves maintainablility 
+-Enhances Flexibility  
+
+   => example ATM Case : you don't know about process works in ATM 
+ 
+ 
++Encapsulation 
+
+is the process of combining data members and member functions into a single unit (class) while restricting direct access to the data. It helps protect data by allowing controlled access through member functions. 
+    -Data members are typically hidden using the private access specifier 
+    -Public member functions (getters and setters) provide controlled access to the data
+    -Improves data security, maintainability, and modularity
+
+   Note : 
+   +setter 
+   +getter 
+=> example : 
+    
+    class User { 
+        private : 
+        string password ; 
+        void setter(string s) {
+             name = s 
+        }
+        string getter() {
+            return name ;
+        }
+    } ; 
+
+ 
++Inheritance  : 
+
+    is a fundamental OOP concept in C++ that allows a class to acquire the data members and member functions of another class. It establishes an "is-a" relationship between classes and promotes code reuse
+
+ => example : Animal : 
+             
+             -Dog class 
+             -Cat class 
+             -Cow class
+
+
+ 
++Polymorphism 
+
+means "many forms", where the same interface can perform different actions depending on the object or context. In C++, it allows the same function or operator to exhibit different behavior in different situations. 
+        
+        image-source : 'https://media.geeksforgeeks.org/wp-content/uploads/20251015124336512847/Poly.webp' 
+
+
+
++Association  : 
+is a relationship between two or more classes where their objects interact with each other while remaining independent. It represents a "uses-a" relationship between objects.
