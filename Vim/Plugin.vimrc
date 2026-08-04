@@ -82,7 +82,8 @@ Plug 'ryanoasis/vim-devicons'            " icons for every filetype (needs a Ner
 call plug#end()
 
 " ---- Colorscheme ----
-colorscheme onedark
+set runtimepath^=/home/thatsothoun/colorscheme/Vim-Plugin-/gruvbox-colorscheme/gruvbox
+colorscheme gruvbox
 
 " ---- Airline (prettier + buffer/tab navigation) ----
 set laststatus=2
